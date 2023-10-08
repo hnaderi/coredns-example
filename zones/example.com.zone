@@ -1,0 +1,15 @@
+@  3600  IN  SOA  ns1.foo.example.  root.foo.example.  (
+   2023100800
+   3600
+   600
+   604800
+   600 )
+   3600  IN  NS  ns1.foo.example.
+   3600  IN  NS  ns2.foo.example.
+
+ns1      IN  A  10.0.0.53
+         IN  AAAA  2001:db8:42:1::53
+ns2      IN  A  10.0.1.53
+         IN  AAAA  2001:db8:42:2::53
+www      IN  A  10.0.0.1
+         IN  AAAA  2001:db8:42:1:1

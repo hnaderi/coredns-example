@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  server:
+    image: coredns/coredns
+    volumes:
+      - ./Corefile:/config
+      - ./zones:/zones
+    command: -conf /config
+    ports:
+      - 53:53/udp
