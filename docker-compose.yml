@@ -8,3 +8,4 @@ services:
     command: -conf /config
     ports:
       - 53:53/udp
+    restart: unless-stopped
